@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  il "namespace" deve essere uguale al "Fully Qualified Name" dell'interfaccia -->
+<mapper namespace="com.mappers.PersonMapper">
+
+
+    <!-- l'"id" deve essere uguale al nome del metodo nell'interfaccia-->
+	<insert id="insert" parameterType="com.model.Person">
+		INSERT INTO GG_Tab_anagrafe_discipline(Ds_disciplina_ad,
+		Flg_sospeso_ad, Id_utente_ad) VALUES (1,1,1);
+	</insert>
+
+</mapper>
