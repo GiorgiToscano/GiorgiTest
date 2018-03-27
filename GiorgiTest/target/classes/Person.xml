@@ -3,8 +3,10 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!-- il "namespace" deve coincidere con il "Fully Qualified Name" dell'interface -->
 <mapper namespace="com.mappers.PersonMapper">
 
+    <!-- l'"id" deve coincidere con il nome del metodo dell'interface -->
 	<insert id="insert" parameterType="com.model.Person">
 		INSERT INTO GG_Tab_anagrafe_discipline(Ds_disciplina_ad,
 		Flg_sospeso_ad, Id_utente_ad) VALUES (1,1,1);
